@@ -95,7 +95,7 @@ class QuizletBanana {
             ) === JSON.stringify(answers[0])
           ) {
             gotAnswer = true;
-            b.style.border = "5px solid green";
+            b.style.border = "1px solid gray";
           } else b.style.border = "";
         });
         if (!gotAnswer && answers.length > 0) {
