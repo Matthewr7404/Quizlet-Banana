@@ -1,0 +1,30 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "live.js" ],
+      "matches": [ "https://quizlet.com/live/*" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "gravity.js" ],
+      "matches": [ "https://quizlet.com/*/gravity" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "match.js" ],
+      "matches": [ "https://quizlet.com/*/match" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Quizlet cheat script",
+   "icons": {
+      "128": "images/128.png",
+      "16": "images/16.png",
+      "48": "images/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvyS7JO652QxyCOVoH1tW3eqGCuRhipezsANI29IYGeHNlwlnB0/CuIkU7bLgj/vFdMKpDLg8FaEj+yNUhXDsp+yrqKPyx9EfQwwE/6VC4cx/AGDnPyr8SLGZK/bQOOq5JnU6hyhvFYue8bAaR7+545vimMqcpEAr030b+6XfBOU6tiCqZ34iJ4QTCKO+cx82pBgv7lmuE1GPxzbOn7Aj2n9yA30sEQ//4ZqG3e20snAWiAcqJl4eLPE0z2x8J0HdZMjtlIqkuMQT2kYleZeYyizXVBqtuv4kJFGqf7EtTlw6Gx2ycV/ZcIeDx2IyvjZRYB1FfDFvw3vN798dFQ7D6wIDAQAB",
+   "manifest_version": 2,
+   "name": "Quizlet Bananas",
+   "permissions": [ "https://quizlet.com/webapi/3.2/game-instances*", "webRequest" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.1"
+}
